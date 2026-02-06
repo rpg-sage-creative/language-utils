@@ -1,4 +1,3 @@
-import type { Optional } from "@rsc-utils/type-utils";
 import { existsSync, readFileSync } from "node:fs";
 
 /**
@@ -6,7 +5,7 @@ import { existsSync, readFileSync } from "node:fs";
  * Tries to read the given filePath.
  * If it fails, it reads the orFileName from node_modules.
  */
-export function readDataFile(filePath: Optional<string>, orFileName: string): string | undefined {
+export function readDataFile(filePath: string | undefined, orFileName: string): string | undefined {
 	const paths = [
 		filePath,
 		`./node_modules/@rsc-utils/language-utils/data/${orFileName}`,

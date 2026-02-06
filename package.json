@@ -27,6 +27,5 @@
 		"@rsc-utils/template-literal-utils": "github:rpg-sage-creative/template-literal-utils#semver:^1.1.1"
 	},
 	"dependencies": {
-		"@rsc-utils/type-utils": "github:rpg-sage-creative/type-utils#semver:^1.0.0"
 	}
 }
